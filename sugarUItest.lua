@@ -3,7 +3,6 @@ loadstring(game:HttpGet("https://wexly.vercel.app/core/assets"))()
 local SugarLibrary = loadstring(game:HttpGet('https://wexly-cdn.vercel.app/library/sugar/sourceR'))()
 local Notification = SugarLibrary.Notification()
 
--- Notification test
 Notification.new({
     Title = "SugarUI",
     Description = "Loaded successfully",
@@ -29,14 +28,12 @@ local Window = SugarLibrary.new({
 	HiddenBGTransparency = 0.1,
 })
 
--- =================== TAB 1: Elements ===================
 local Tab1 = Window:NewTab({
     Title = "Elements",
     Description = "All elements",
     Icon = "layout-list"
 })
 
--- LEFT секция
 local LeftSection = Tab1:NewSection({
     Title = "Left Section",
     Icon = "list",
@@ -147,7 +144,6 @@ LeftSection:NewImage({
     ImageId = assets.swanmo_b,
 })
 
--- RIGHT секция
 local RightSection = Tab1:NewSection({
     Title = "Right Section",
     Icon = "layout-list",
@@ -181,7 +177,6 @@ RightSection:NewSlider({
     end
 })
 
--- =================== TAB 2: Collapsible ===================
 local Tab2 = Window:NewTab({
     Title = "Collapsible",
     Description = "Collapsible sections",
@@ -265,7 +260,6 @@ CollapsibleClosed:NewButton({
     Callback = function() print("Hidden button") end
 })
 
--- =================== TAB 3: Configs ===================
 local Tab3 = Window:NewTab({
     Title = "Configs",
     Description = "Config management",
@@ -350,7 +344,6 @@ ConfigSection:NewKeybind({
     end
 })
 
--- =================== TAB 4: Info ===================
 local Tab4 = Window:NewTab({
     Title = "Info",
     Description = "About",
@@ -380,7 +373,6 @@ InfoSection:NewImage({
     ImageId = "rbxassetid://104381302798685"
 })
 
--- Visible test
 local visSection = Tab4:NewSection({
     Title = "Visibility Test",
     Icon = "eye",
@@ -408,4 +400,4 @@ visSection:NewButton({
     end
 })
 
-print("SugarUI Test loaded — press RightShift to toggle")
+
